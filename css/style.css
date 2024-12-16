@@ -32,6 +32,7 @@ a{
 .logo {
     height: 50px; 
     max-width: 100%;
+    height: 100%;
 }
 .menu {
     height: 40px; 
@@ -208,9 +209,48 @@ h3 {
 .dot.active {
     background-color: #333;
 }
+/* Footer Design */
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+}
+.footer_grid{
+    display: grid;
+    grid-template-columns: 100%;
+}
+.contact_img_container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+.links a{
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.links li{
+    list-style-type: none;
+    padding: 10px 0px;
+}
+footer p{
+    margin: 10px 20px;
+    text-align: center;
+}
+.copy{
+    text-align: center;
+    padding: 20px;
+    margin: 0px;
+    color: white;
+    background-color: black;
+}
 
 
 @media (min-width: 320px) and (max-width: 375px) {
+    .logo {
+        max-width: 20%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
     }
@@ -226,26 +266,47 @@ h3 {
     }
 }
 @media (min-width: 375px) and (max-width: 425px) {
+    .logo {
+        max-width: 20%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
     }
 }
 @media (min-width: 425px) and (max-width: 480px) {
+    .logo {
+        max-width: 20%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
     }
 }
 @media (min-width: 480px) and (max-width: 600px) {
+    .logo {
+        max-width: 20%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
+    }
+    .logo {
+        max-width: 20%;
+        height: 100%;
     }
     .grade_grid{
         display: grid;
         grid-template-columns: 50% 50%;
         padding: 20px;
     }
+
 }
 @media (min-width: 600px) and (max-width: 767px) {
+    .logo {
+        max-width: 15%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
     }
@@ -259,8 +320,18 @@ h3 {
         grid-template-columns: 50% 50%;
         padding: 20px;
     }
+    /* footer Design */
+
+    .footer_grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
+    .logo {
+        max-width: 15%;
+        height: 100%;
+    }
     .header_grid{
         display: none;
     }
@@ -289,6 +360,12 @@ h3 {
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    /* footer Design */
+
+    .footer_grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
@@ -320,6 +397,12 @@ h3 {
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    /* footer Design */
+
+    .footer_grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 }
 @media (min-width: 1200px) {
@@ -354,5 +437,10 @@ h3 {
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    /* footer Design */
+    .footer_grid{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
     }
 }
