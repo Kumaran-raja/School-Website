@@ -1,0 +1,358 @@
+body{
+    background-color: #F5F5DC;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+p{
+    margin: 0px;
+}
+header{
+    background-color: #7C2D12;
+    color: white;
+}
+a{
+    color: white;
+}
+.top{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+.mobileview {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%; 
+    background-color: #F5F5DC;
+    box-sizing: border-box; 
+}
+.logo {
+    height: 50px; 
+    max-width: 100%;
+}
+.menu {
+    height: 40px; 
+    max-width: 100%;
+    cursor: pointer; 
+}
+.header_grid{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+.header_grid1{
+    display: flex;
+    background-color: #F5F5DC;
+    padding: 10px;
+    justify-content: space-around;
+}.header_grid1 a{
+    color: black;
+}
+.header_grid2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.home_background{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.center_font{
+    text-align: center;
+}
+.type_grid{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 40px 0px;
+    justify-content: center;
+}
+.type_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px;
+  
+}
+.type_each_grid{
+    padding: 10px;
+}
+.btn{
+    background-color: #374151;
+    opacity: 0.7;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: -60px;
+}
+.btn:hover{
+    background-color: #7C2D12;
+    color: white;
+    opacity: 0.9;
+}
+.grade_grid{
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 20px;
+}
+.grade_inline_grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 10px;
+}
+.icon_img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+/* Main container */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.testimonial-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial p:last-child {
+    font-size: 1rem;
+    color: #777;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #777;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow:hover {
+    color: #333;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .header_grid{
+        display: none;
+    }
+    .type_img{
+        width: 280px;
+        height:100%;
+        border-radius: 10px;
+        margin: 20px;
+        box-shadow: 0 4px 6px;
+    }
+    .type_each_grid{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .header_grid{
+        display: none;
+    }
+}
+@media (min-width: 425px) and (max-width: 480px) {
+    .header_grid{
+        display: none;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+    .header_grid{
+        display: none;
+    }
+    .grade_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
+    }
+}
+@media (min-width: 600px) and (max-width: 767px) {
+    .header_grid{
+        display: none;
+    }
+    .type_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+    .grade_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+    .header_grid{
+        display: none;
+    }
+    .type_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+    .grade_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 20px;
+    }
+    .testimonial-container {
+       
+        width: 100%;
+        min-width: 750px;
+      
+    }
+    .testimonial-slider {
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 1023px) and (max-width: 1200px) {
+    .mobileview{
+        display: none;
+    }
+    .type_grid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-content: space-around;
+    }
+    .grade_grid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 20px;
+    }
+    .testimonial-container {
+       
+        width: 100%;
+        min-width: 1023px;
+      
+    }
+    .testimonial-slider {
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .mobileview{
+        display: none;
+    }
+    .type_grid{
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-content: space-around;
+    }
+
+    .grade_grid{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        padding: 20px;
+    }
+    
+    .testimonial-container {
+       
+        width: 100%;
+        min-width: 1200px;
+      
+    }
+    .testimonial-slider {
+        display: flex;
+        justify-content: left;
+        flex-wrap: nowrap;
+    }
+
+    .testimonial {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
