@@ -13,11 +13,26 @@
     <header>
         <div class="top">
             <p>ACKR School is Now Open</p>
-            <a style="display: block;margin: auto 20px; color: white; text-decoration: none;" href="">LEARN MORE</a>
+            <a href="">LEARN MORE</a>
         </div>
         <div class="mobileview">
             <img class="logo" src="images/logo.png" alt="ACKR school">
             <img id="menubtn" class="menu" src="images/menu.png" alt="menu">
+        </div>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Admissions</a>
+            <a href="#">Academics</a>
+            <a href="#">Arts</a>
+            <a href="#">Athletics</a>
+            <a href="#">Faith</a>
+            <a href="#">For Parents</a>
+            <a href="#">Support</a>
+            <div style="display: flex;justify-content: center; margin: 10px;">
+                <button class="contactnavbtn">CONTACT US</button>
+                <button class="supportnavbtn">SUPPORT</button>
+            </div>
         </div>
         <div class="header_grid">
             <div style="display: flex;justify-content: center;align-items: center;">
@@ -31,13 +46,69 @@
                     <a href="">DONATE NOW</a>
                 </div>
                 <div class="header_grid2">
-                    <a href="">ABOUT</a>
-                    <a href="">ADMISSIONS</a>
-                    <a href="">ACADEMICS</a>
-                    <a href="">ARTS</a>
-                    <a href="">ATHLETICS</a>
-                    <a href="">FAITH</a>
-                    <a href="">STUDENT EXPERIENCE</a>
+                 
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ABOUT
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ADMISSIONS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ACADEMICS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ARTS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ATHLETICS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            FAITH
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                  
+                    <!-- <a href="">STUDENT EXPERIENCE</a> -->
                 </div>
             </div>
         </div>
@@ -51,20 +122,20 @@
         </div>
         <div class="type_grid">
             <div class="type_each_grid">
-                <img class="type_img" src="images/preschool.jpg" alt="">
+                <img class="type_img" src="images/preschool.png" alt="">
                 <button class="btn">PRESCHOOL</button>
             </div>
             <div class="type_each_grid">
-                <img class="type_img" src="images/elementary.jpg" alt="">
+                <img class="type_img" src="images/elementary.png" alt="">
                 <button class="btn">ELEMENTARY</button>
             </div>
             <div class="type_each_grid">
-                <img class="type_img" src="images/junior.jpg" alt="">
+                <img class="type_img" src="images/junior.png" alt="">
                 <button class="btn">JUNIOR HIGH</button>
 
             </div>
             <div class="type_each_grid">
-                <img class="type_img" src="images/high school.jpg" alt="">
+                <img class="type_img" src="images/high school.png" alt="">
                 <button class="btn">HIGH SCHOOL</button>
             </div>
         </div>
@@ -111,37 +182,37 @@
             <div class="testimonial-slider">
                 <div class="testimonial">
                     <p>"I just like everything about King's and how people work together to accomplish things."</p>
-                    <img class="avatar" src="images/junior.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/junior.png" alt="Student Photo">
                     <h3>Mitchell</h3>
                     <p>Grade 5</p>
                 </div>
                 <div class="testimonial">
                     <p>"The school provides so many opportunities to grow and learn."</p>
-                    <img class="avatar" src="images/high school.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/high school.png" alt="Student Photo">
                     <h3>Sophie</h3>
                     <p>Grade 4</p>
                 </div>
                 <div class="testimonial">
                     <p>"The school provides so many opportunities to grow and learn."</p>
-                    <img class="avatar" src="images/high school.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/high school.png" alt="Student Photo">
                     <h3>Sophie</h3>
                     <p>Grade 7</p>
                 </div>
                 <div class="testimonial">
                     <p>"The school provides so many opportunities to grow and learn."</p>
-                    <img class="avatar" src="images/high school.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/high school.png" alt="Student Photo">
                     <h3>Sophie</h3>
                     <p>Grade 9</p>
                 </div>
                 <div class="testimonial">
                     <p>"The school provides so many opportunities to grow and learn."</p>
-                    <img class="avatar" src="images/high school.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/high school.png" alt="Student Photo">
                     <h3>Sophie</h3>
                     <p>Grade 5</p>
                 </div>
                 <div class="testimonial">
                     <p>"The school provides so many opportunities to grow and learn."</p>
-                    <img class="avatar" src="images/high school.jpg" alt="Student Photo">
+                    <img class="avatar" src="images/high school.png" alt="Student Photo">
                     <h3>Sophie</h3>
                     <p>Grade 5</p>
                 </div>

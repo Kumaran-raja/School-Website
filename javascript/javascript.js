@@ -51,3 +51,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSliderPosition();
 });
+
+// Select menu button and side navigation menu
+const menuBtn = document.getElementById("menubtn");
+const sideNav = document.getElementById("sidenav");
+const closeBtn = document.getElementById("closebtn");
+
+// Open the side navigation
+menuBtn.addEventListener("click", () => {
+    sideNav.style.width = "300px"; // Open to 250px
+});
+
+// Close the side navigation
+closeBtn.addEventListener("click", () => {
+    sideNav.style.width = "0"; // Collapse to 0
+});
+

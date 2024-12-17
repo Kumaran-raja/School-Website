@@ -4,6 +4,9 @@ body{
     padding: 0px;
     margin: 0px;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 p{
     margin: 0px;
 }
@@ -19,6 +22,12 @@ a{
     width: 100%;
     padding: 10px;
     justify-content: center;
+}
+.top a{
+    display: block;
+    margin: auto 20px;
+    color: white; 
+    text-decoration: none;
 }
 .mobileview {
     display: flex;
@@ -37,6 +46,7 @@ a{
 .menu {
     height: 40px; 
     max-width: 100%;
+    padding: 5px;
     cursor: pointer; 
 }
 .header_grid{
@@ -50,6 +60,7 @@ a{
     justify-content: space-around;
 }.header_grid1 a{
     color: black;
+    text-decoration: none;
 }
 .header_grid2{
     display: flex;
@@ -237,6 +248,7 @@ footer p{
     margin: 10px 20px;
     text-align: center;
 }
+/* copy rights claim */
 .copy{
     text-align: center;
     padding: 20px;
@@ -244,8 +256,61 @@ footer p{
     color: white;
     background-color: black;
 }
+/* Side Navigation Menu */
+.sidenav {
+    height: 100%;
+    width: 0; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    right: 0; /* Position it on the right */
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth opening effect */
+    padding-top: 60px;
+}
 
+.sidenav a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
 
+.sidenav a:hover {
+    color: #f4a261;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px; /* Move close button to the right side */
+    font-size: 36px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.contactnavbtn{
+    color: black;
+    background-color: #F5F5DC;
+    margin: 10px;
+    padding: 10px 20px;
+
+}
+.supportnavbtn{
+    color: white;
+    background-color: #7C2D12;
+    padding: 10px;
+    margin: 10px;
+}
+.btn{
+    margin-top: 0px;
+    border: none;
+    background-color: #7C2D12;
+    color: white;
+    opacity: 1;
+}
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
         max-width: 20%;
@@ -255,14 +320,21 @@ footer p{
         display: none;
     }
     .type_img{
-        width: 280px;
-        height:100%;
+        width: 270px;
+        height:min-content;
         border-radius: 10px;
         margin: 20px;
         box-shadow: 0 4px 6px;
     }
+ 
     .type_each_grid{
         margin-bottom: 20px;
+    }
+    .top a{
+        display: block;
+        margin: auto;
+        color: white; 
+        text-decoration: none;
     }
 }
 @media (min-width: 375px) and (max-width: 425px) {
