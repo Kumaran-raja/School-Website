@@ -309,8 +309,32 @@ footer p{
     border: none;
     background-color: #7C2D12;
     color: white;
+    width: 100%;
     opacity: 1;
 }
+.btn-group:hover .dropdown-menu {
+    display: block;
+    margin-top: 30px;
+  }
+  /* Ensure the dropdown doesn't disappear when hovering over items */
+  .dropdown-menu {
+    margin-top: 0; /* Align with the button */
+  }
+   /* About Page Style */
+   .about_content{
+    display: flex;
+    flex-direction: column;
+  }
+  .about_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 40px;
+  }
+  .about_img{
+    width: 100%;
+    order: -1;
+  }
+ 
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
         max-width: 20%;
@@ -455,10 +479,8 @@ footer p{
         padding: 20px;
     }
     .testimonial-container {
-       
         width: 100%;
         min-width: 1023px;
-      
     }
     .testimonial-slider {
         display: flex;
@@ -476,6 +498,22 @@ footer p{
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
+     /* About Page Style */
+  .about_content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .about_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 60px;
+  }
+  .about_img{
+    width: 100%;
+    padding: 10px;
+    order: 1;
+
+  }
 }
 @media (min-width: 1200px) {
     .mobileview{
@@ -515,4 +553,19 @@ footer p{
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
+     /* About Page Style */
+  .about_content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .about_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 60px;
+  }
+  .about_img{
+    width: 100%;
+    padding: 10px;
+    order: 1;
+  }
 }

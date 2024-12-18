@@ -67,3 +67,12 @@ closeBtn.addEventListener("click", () => {
     sideNav.style.width = "0"; // Collapse to 0
 });
 
+const about=document.getElementById("aboutnavbtn");
+about.addEventListener('click',function(){
+    window.location.href="about us.html";
+})
+
+const home=document.getElementById("homenavbtn");
+home.addEventListener('click',function(){
+    window.location.href="index.html";
+})
