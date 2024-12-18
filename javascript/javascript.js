@@ -76,3 +76,27 @@ const home=document.getElementById("homenavbtn");
 home.addEventListener('click',function(){
     window.location.href="index.html";
 })
+// automatic Counter
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute("data-target");
+        const increment = target / 100; // Adjust the divisor to control speed
+
+        let currentValue = 0;
+
+        const updateCounter = () => {
+            if (currentValue < target) {
+                currentValue = Math.min(currentValue + increment, target);
+                counter.textContent = Math.floor(currentValue);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target; // Ensure the exact target value is displayed
+            }
+        };
+
+        updateCounter();
+    });
+});
+

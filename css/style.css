@@ -7,6 +7,9 @@ body{
 body::-webkit-scrollbar{
     display: none;
 }
+body:hover{
+    cursor: default;
+}
 p{
     margin: 0px;
 }
@@ -75,22 +78,51 @@ a{
 .center_font{
     text-align: center;
 }
-.type_grid{
+.type_grid {
     display: grid;
     grid-template-columns: 100%;
     margin: 40px 0px;
     justify-content: center;
 }
-.type_img{
-    width: 100%;
-    height: 100%;
+
+.type_img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px;
-  
+    position: relative; 
 }
-.type_each_grid{
+
+.typebtn {
+    color: white;
+    display: block;
+    z-index: 1000;
+    background-color: #7C2D12;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 60%;
+    cursor: pointer;
+    position: absolute; 
+    bottom: 70px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+.typebtn:hover{
+    background-color: #7C2D12;
+    color: white;
+    opacity: 0.9;
+}
+.type_each_grid {
     padding: 10px;
+    position: relative; 
 }
+
+
 .btn{
     background-color: #374151;
     opacity: 0.7;
@@ -109,17 +141,28 @@ a{
 .grade_grid{
     display: grid;
     grid-template-columns: 100%;
-    padding: 20px;
+    background-color: #ce4517;
+    color: white;
+}
+.grade_inline_grid:hover{
+    background-color: #90460a;
+
 }
 .grade_inline_grid{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 30% 50%;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    justify-content: center;
+}
+.grade_icon_img{
+    width: 85%;
+    display: block;
+    margin: auto;
     padding: 10px;
 }
-.icon_img{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
+.grade_icon_img:hover{
+    width: 90%;
 }
 /* Main container */
 .testimonial-container {
@@ -343,22 +386,19 @@ footer p{
     .header_grid{
         display: none;
     }
-    .type_img{
-        width: 270px;
-        height:min-content;
-        border-radius: 10px;
-        margin: 20px;
-        box-shadow: 0 4px 6px;
-    }
- 
-    .type_each_grid{
-        margin-bottom: 20px;
-    }
+  
     .top a{
         display: block;
         margin: auto;
         color: white; 
         text-decoration: none;
+    }
+    .type_img {
+        width: 95%;
+        height: 95%;
+    }
+    .typebtn {
+        bottom: 70px; 
     }
 }
 @media (min-width: 375px) and (max-width: 425px) {
@@ -369,6 +409,14 @@ footer p{
     .header_grid{
         display: none;
     }
+    .type_img {
+        width: 95%;
+        height: 95%;
+    }
+    .typebtn {
+        bottom: 70px; 
+    }
+
 }
 @media (min-width: 425px) and (max-width: 480px) {
     .logo {
@@ -377,6 +425,13 @@ footer p{
     }
     .header_grid{
         display: none;
+    }
+    .type_img {
+        width: 90%;
+        height: 90%;
+    }
+    .typebtn {
+        bottom: 80px; 
     }
 }
 @media (min-width: 480px) and (max-width: 600px) {
@@ -391,11 +446,15 @@ footer p{
         max-width: 20%;
         height: 100%;
     }
-    .grade_grid{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        padding: 20px;
+    /* School category */
+    .type_img {
+        width: 90%;
+        height: 90%;
     }
+    .typebtn {
+        bottom: 90px; 
+    }
+
 
 }
 @media (min-width: 600px) and (max-width: 767px) {
@@ -407,14 +466,34 @@ footer p{
         display: none;
     }
     .type_grid{
-        display: grid;
         grid-template-columns: 50% 50%;
-        justify-content: space-around;
     }
+    .type_img {
+        width: 90%;
+        height: 90%;
+    }
+    .typebtn {
+        bottom: 60px; 
+    }
+    /* school grade */
     .grade_grid{
         display: grid;
         grid-template-columns: 50% 50%;
-        padding: 20px;
+    }
+    .grade_inline_grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        border-bottom: 1px solid #ccc; 
+        border-right: 1px solid #ccc;
+    }
+    .grade_inline_grid:last-child {
+        border-right: none;
+    }
+    .grade_grid > :nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+    .grade_grid > :nth-child(2) {
+        border-right: none;
     }
     /* footer Design */
 
@@ -422,6 +501,7 @@ footer p{
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
+
 }
 @media (min-width: 767px) and (max-width: 1023px) {
     .logo {
@@ -431,31 +511,52 @@ footer p{
     .header_grid{
         display: none;
     }
+  
     .type_grid{
-        display: grid;
         grid-template-columns: 50% 50%;
-        justify-content: space-around;
     }
+    .type_img {
+        width: 90%;
+        height: 90%;
+    }
+    .typebtn {
+        bottom: 70px; 
+    }
+    /* school grade */
     .grade_grid{
         display: grid;
         grid-template-columns: 50% 50%;
-        padding: 20px;
     }
+    .grade_inline_grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        border-bottom: 1px solid #ccc; 
+        border-right: 1px solid #ccc;
+    }
+    .grade_inline_grid:last-child {
+        border-right: none;
+    }
+    .grade_grid > :nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+    .grade_grid > :nth-child(2) {
+        border-right: none;
+    }
+
+    /* feedback Slider */
     .testimonial-container {
-       
         width: 100%;
         min-width: 750px;
-      
     }
     .testimonial-slider {
         display: flex;
         justify-content: left;
         flex-wrap: nowrap;
     }
-
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
+        
     }
     /* footer Design */
 
@@ -473,10 +574,25 @@ footer p{
         grid-template-columns: 25% 25% 25% 25%;
         justify-content: space-around;
     }
+    .type_img {
+        width: 100%;
+        height: 100%;
+    }
+    .typebtn {
+        bottom: 40px; 
+    }
     .grade_grid{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        padding: 20px;
+    }
+    .grade_inline_grid {
+        padding: 10px;
+        grid-template-columns: 30% 70%;
+        border-right: 1px solid #ccc;
+        column-gap: 10px;
+    }
+    .grade_inline_grid:nth-child(4n) {
+        border-right: none; /* Removes the line after the last column */
     }
     .testimonial-container {
         width: 100%;
@@ -525,13 +641,26 @@ footer p{
         grid-template-columns: 25% 25% 25% 25%;
         justify-content: space-around;
     }
-
+    .type_img {
+        width: 100%;
+        height: 100%;
+    }
+    .typebtn {
+        bottom: 50px; 
+    }
     .grade_grid{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
-        padding: 20px;
     }
-    
+    .grade_inline_grid {
+        padding: 10px;
+        grid-template-columns: 30% 70%;
+        border-right: 1px solid #ccc;
+        column-gap: 10px;
+    }
+    .grade_inline_grid:nth-child(4n) {
+        border-right: none; /* Removes the line after the last column */
+    }
     .testimonial-container {
        
         width: 100%;
