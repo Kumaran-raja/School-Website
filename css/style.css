@@ -12,6 +12,7 @@ body:hover{
 }
 p{
     margin: 0px;
+    font-size: 18px;
 }
 header{
     background-color: #7C2D12;
@@ -377,7 +378,126 @@ footer p{
     width: 100%;
     order: -1;
   }
- 
+  .fixed_content_grid{
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  .scrollable_part{
+    padding: 20px;
+    height: 100vh;
+    margin: 20px;
+    overflow-y: auto;
+  }
+  .scrollable_part::-webkit-scrollbar{
+    display: none;
+  }
+  .fixed_part{
+    display: block;
+    margin: 0px auto;
+    padding-top: 20px;
+    margin-top: 20px;
+    height: max-content;
+  }
+ .fixed_part a{
+    display: block;
+    padding: 10px 30px;
+    color: black;
+    background-color: #f1f1f1;
+
+ }
+ .fixed_part h3{
+    padding: 10px 30px;
+    margin-bottom: 0px;
+    background-color: #aeb4bf;
+
+ }
+ a{
+    text-decoration: none;
+ }
+
+ .contact_scrollable_part{
+    height: 100vh;
+    overflow-y: auto;
+    margin: 10px;
+  }
+  .contact_scrollable_part::-webkit-scrollbar{
+    display: none;
+  }
+
+ .contact_scrollable_part table{
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+ }
+ .contact_scrollable_part tr{
+    display: grid;
+    grid-template-columns: 60% 40%;
+ }
+ .contact_scrollable_part th{
+    background-color: #aeb4bf;
+    padding: 10px;
+ }
+  .contact_scrollable_part td{
+    padding: 15px 10px;
+  }
+  .contact_scrollable_part li{
+    list-style-type: none;
+    margin-top: 10px;
+  }
+  .phone{
+    color: green;
+  }
+  .email{
+    word-break: break-word; 
+    color: #7C2D12;
+  }
+  .school_content_part p,h2,h6{
+    margin: 20px;
+  }
+  .school_content_part li{
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .duo_grid {
+    display: grid;
+    grid-template-columns: 100%; /* Default single-column layout for small screens */
+    margin: 20px 0px;
+  }
+  .duo_grid_img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .duo_grid_img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .duo_grid_content p{
+    margin: 20px 0px;
+    text-align: justify;
+  }
+  .duo_grid_content h2{
+    margin: 0px;
+  }
+  .duo_grid_content_img{
+    display: block;
+    margin: auto;
+  }
+  .schedulebtn{
+    width: 80%;
+    background-color: #7C2D12;
+    color: white;
+    padding: 10px;
+    display: block;
+    margin: auto;
+  }
+  .duo_grid_content {
+    padding: 20px;
+    display: block;
+    margin: auto;
+  }
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
         max-width: 20%;
@@ -400,6 +520,37 @@ footer p{
     .typebtn {
         bottom: 70px; 
     }
+    .fixed_content_grid{
+        grid-template-columns: 100%;
+    }
+    .scrollable_part{
+        height: 100%;
+        overflow-y: auto;
+      }
+    .fixed_part{
+        height: 100%;
+        display: block;
+        text-align: center;
+        }
+    .contact_scrollable_part{
+        height: 100%;
+        overflow-y: auto;
+      }
+      .duo_grid {
+        grid-template-rows: auto auto; /* Two rows: one for image, one for content */
+        margin: 20px 0px;
+      }
+      
+      .duo_grid_content {
+        grid-row: 2;
+
+      }
+      .duo_grid_img {
+        width: 100%;
+      }
+      .top_img {
+        grid-row: 1; /* Place the image in the first row */
+      }
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .logo {
@@ -416,7 +567,36 @@ footer p{
     .typebtn {
         bottom: 70px; 
     }
-
+    .fixed_content_grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .scrollable_part{
+        height: 100%;
+        overflow-y: auto;
+      }
+  .fixed_part{
+    height: 100%;
+    display: block;
+    text-align: center;
+    }
+    .duo_grid {
+        display: grid;
+        grid-template-columns: 100%; /* Keep single-column layout */
+        grid-template-rows: auto auto; /* Two rows: one for image, one for content */
+        margin: 20px 0px;
+      }
+      
+      .duo_grid_content {
+        grid-row: 2; /* Place content in the second row */
+      }
+      
+      .top_img {
+        grid-row: 1; /* Place the image in the first row */
+      }
+      .duo_grid_img {
+        width: 100%;
+      }
 }
 @media (min-width: 425px) and (max-width: 480px) {
     .logo {
@@ -433,6 +613,37 @@ footer p{
     .typebtn {
         bottom: 80px; 
     }
+    .fixed_content_grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .scrollable_part{
+        height: 100%;
+        overflow-y: auto;
+      }
+  
+  .fixed_part{
+    height: 100%;
+    display: block;
+    text-align: center;
+    }
+    .duo_grid {
+        display: grid;
+        grid-template-columns: 100%; /* Keep single-column layout */
+        grid-template-rows: auto auto; /* Two rows: one for image, one for content */
+        margin: 20px 0px;
+      }
+      
+      .duo_grid_content {
+        grid-row: 2; /* Place content in the second row */
+      }
+      
+      .top_img {
+        grid-row: 1; /* Place the image in the first row */
+      }
+      .duo_grid_img {
+        width: 100%;
+      }
 }
 @media (min-width: 480px) and (max-width: 600px) {
     .logo {
@@ -454,7 +665,36 @@ footer p{
     .typebtn {
         bottom: 90px; 
     }
-
+    .fixed_content_grid{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .scrollable_part{
+        height: 100%;
+        overflow-y: auto;
+      }
+  .fixed_part{
+    height: 100%;
+    display: block;
+    text-align: center;
+    }
+    .duo_grid {
+        display: grid;
+        grid-template-columns: 100%; /* Keep single-column layout */
+        grid-template-rows: auto auto; /* Two rows: one for image, one for content */
+        margin: 20px 0px;
+      }
+      
+      .duo_grid_content {
+        grid-row: 2; /* Place content in the second row */
+      }
+      
+      .top_img {
+        grid-row: 1; /* Place the image in the first row */
+      }
+      .duo_grid_img {
+        width: 100%;
+      }
 
 }
 @media (min-width: 600px) and (max-width: 767px) {
@@ -501,7 +741,25 @@ footer p{
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
-
+    .fixed_content_grid{
+        display: grid;
+        grid-template-columns: 60% 40%;
+      }
+      .duo_grid {
+        display: grid;
+        grid-template-columns: 100%; /* Keep single-column layout */
+        grid-template-rows: auto auto; /* Two rows: one for image, one for content */
+        margin: 20px 0px;
+      }
+      .duo_grid_content {
+        grid-row: 2; /* Place content in the second row */
+      }
+      .top_img {
+        grid-row: 1; /* Place the image in the first row */
+      }
+      .duo_grid_img {
+        width: 100%;
+      }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
     .logo {
@@ -564,6 +822,17 @@ footer p{
         display: grid;
         grid-template-columns: 33% 33% 33%;
     }
+    .fixed_content_grid{
+        display: grid;
+        grid-template-columns: 65% 35%;
+      }
+      .duo_grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+      }
+      .duo_grid_img{
+        width: 100%;
+      }
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
     .mobileview{
@@ -628,7 +897,18 @@ footer p{
     width: 100%;
     padding: 10px;
     order: 1;
+  }
+  /* contact page */
+  .contact_scrollable_part{
+    margin: 30px;
+  }
 
+  .duo_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .duo_grid_img{
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
@@ -696,5 +976,17 @@ footer p{
     width: 100%;
     padding: 10px;
     order: 1;
+  }
+  /* contact page */
+  .contact_scrollable_part{
+    margin: 30px;
+  }
+
+  .duo_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .duo_grid_img{
+    width: 100%;
   }
 }

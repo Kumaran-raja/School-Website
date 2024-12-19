@@ -100,3 +100,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+
+
+window.addEventListener('scroll', function() {
+    var scrollablePart = document.querySelector('.scrollable_part');
+    var fixedPart = document.querySelector('.fixed_part');
+
+    if (scrollablePart.scrollTop > 0) {
+        fixedPart.style.display = 'block';
+    } else {
+        fixedPart.style.display = 'block';
+    }
+});
