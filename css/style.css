@@ -372,7 +372,7 @@ footer p{
   .about_content_text{
     text-align: justify;
     margin: auto;
-    padding: 40px;
+    padding: 20px;
   }
   .about_img{
     width: 100%;
@@ -394,6 +394,7 @@ footer p{
   .fixed_part{
     display: block;
     margin: 0px auto;
+    width: 80%;
     padding-top: 20px;
     margin-top: 20px;
     height: max-content;
@@ -465,13 +466,10 @@ footer p{
     margin: 20px 0px;
   }
   .duo_grid_img {
-    width: 50%;
-    display: block;
-    margin: auto;
-  }
-  .duo_grid_img {
     width: 100%;
+    height: 100%;
     display: block;
+    border-radius: 10PX;
     margin: auto;
   }
   .duo_grid_content p{
@@ -498,6 +496,61 @@ footer p{
     display: block;
     margin: auto;
   }
+  /* Elementary */
+  .applybtn{
+    width: 100%;
+    background-color: #7C2D12;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  /* junior High Page */
+  .subjectdescription{
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 20px 0px;
+  }
+  .subjectdescription p{
+    padding: 20px;
+    text-align: justify;
+  }
+  .highschool_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+   
+  }
+  .highschool_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .highschool_img{
+    width: 100%;
+    order: -1;
+  }
+  .highschool_content_text h2{
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .hightschoolCurriculum h2{
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .hightschoolCurriculum{
+    width: 70%;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  .advanced li{
+    margin-left: 40px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
         max-width: 20%;
@@ -546,10 +599,17 @@ footer p{
 
       }
       .duo_grid_img {
-        width: 100%;
+        width: 90%;
       }
       .top_img {
         grid-row: 1; /* Place the image in the first row */
+      }
+      .hightschoolCurriculum{
+        width: 100%;
+        text-align: justify;
+        display: block;
+        margin: auto;
+        padding: 10px;
       }
 }
 @media (min-width: 375px) and (max-width: 425px) {
@@ -595,8 +655,16 @@ footer p{
         grid-row: 1; /* Place the image in the first row */
       }
       .duo_grid_img {
-        width: 100%;
+        width: 90%;
       }
+      .hightschoolCurriculum{
+        width: 90%;
+        text-align: justify;
+        display: block;
+        margin: auto;
+        padding: 10px;
+      }
+    
 }
 @media (min-width: 425px) and (max-width: 480px) {
     .logo {
@@ -642,8 +710,14 @@ footer p{
         grid-row: 1; /* Place the image in the first row */
       }
       .duo_grid_img {
-        width: 100%;
+        width: 90%;
       }
+      .hightschoolCurriculum{
+        width: 90%;
+        text-align: justify;
+        padding: 10px;
+      }
+    
 }
 @media (min-width: 480px) and (max-width: 600px) {
     .logo {
@@ -693,8 +767,12 @@ footer p{
         grid-row: 1; /* Place the image in the first row */
       }
       .duo_grid_img {
-        width: 100%;
+        width: 90%;
       }
+      .hightschoolCurriculum{
+        width: 90%;
+      }
+    
 
 }
 @media (min-width: 600px) and (max-width: 767px) {
@@ -758,7 +836,10 @@ footer p{
         grid-row: 1; /* Place the image in the first row */
       }
       .duo_grid_img {
-        width: 100%;
+        width: 90%;
+      }
+      .hightschoolCurriculum{
+        width: 90%;
       }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -833,6 +914,10 @@ footer p{
       .duo_grid_img{
         width: 100%;
       }
+      .subjectdescription{
+        grid-template-columns: 50% 50%;
+      }
+  
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
     .mobileview{
@@ -891,7 +976,7 @@ footer p{
   .about_content_text{
     text-align: justify;
     margin: auto;
-    padding: 60px;
+    padding: 20px;
   }
   .about_img{
     width: 100%;
@@ -909,6 +994,23 @@ footer p{
   }
   .duo_grid_img{
     width: 100%;
+  }
+  .subjectdescription{
+    grid-template-columns: 50% 50%;
+  }
+   /* hight school page */
+   .highschool_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+  }
+  .highschool_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .highschool_img{
+    width: 100%;
+    order: 1;
   }
 }
 @media (min-width: 1200px) {
@@ -970,7 +1072,7 @@ footer p{
   .about_content_text{
     text-align: justify;
     margin: auto;
-    padding: 60px;
+    padding: 20px;
   }
   .about_img{
     width: 100%;
@@ -989,4 +1091,22 @@ footer p{
   .duo_grid_img{
     width: 100%;
   }
+  .subjectdescription{
+    grid-template-columns: 50% 50%;
+  }
+  /* hight school page */
+  .highschool_content_text{
+    text-align: justify;
+    margin: auto;
+    padding: 20px;
+  }
+  .highschool_content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .highschool_img{
+    width: 100%;
+    order: 1;
+  }
+
 }

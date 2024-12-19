@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACKR Elementary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png?v=1" type="image/png">
+</head>
+<body>
+    <!-- Header start Here -->
+    <header>
+        <div class="top">
+            <p>ACKR School is Now Open</p>
+            <a href="">LEARN MORE</a>
+        </div>
+        <!-- for mmobile view logo and menu only show below 1024px-->
+        <div class="mobileview">
+            <img class="logo" src="images/logo.png" alt="ACKR school">
+            <img id="menubtn" class="menu" src="images/menu.png" alt="menu">
+        </div>
+        <!-- Side Navigation items -->
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" id="closebtn" class="closebtn">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="about us.html">About</a>
+            <a href="#">Admissions</a>
+            <a href="#">Academics</a>
+            <a href="#">Arts</a>
+            <a href="#">Athletics</a>
+            <a href="#">Faith</a>
+            <a href="#">For Parents</a>
+            <a href="#">Support</a>
+            <div style="display: flex;justify-content: center; margin: 10px;">
+                <button class="contactnavbtn">CONTACT US</button>
+                <button class="supportnavbtn">SUPPORT</button>
+            </div>
+        </div>
+        <!-- laptop view logo and menu only show above 1024px -->
+        <div class="header_grid">
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <img class="logo" src="images/logo.png" alt="">
+            </div>
+            <div>
+                <div class="header_grid1">
+                    <a href="">FOR PARENTS</a>
+                    <a href="">ALUMNI</a>
+                    <a href="">SUPPORT</a>
+                    <a href="">DONATE NOW</a>
+                </div>
+                <!-- Menu with sub -->
+                <div class="header_grid2">
+                    <div class="btn-group">
+                        <button id="homenavbtn" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            HOME
+                        </button>
+                        <!-- Home sub menu -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="aboutnavbtn">
+                            ABOUT
+                        </button>
+                        <!-- About sub menu -->
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about us.html">About</a></li>
+                            <li><a class="dropdown-item" href="#">Mission and Vision</a></li>
+                            <li><a class="dropdown-item" href="#">History</a></li>
+                            <li><a class="dropdown-item" href="#">Head of School</a></li>
+                            <li><a class="dropdown-item" href="#">Faculty & staff Directory</a></li>
+                            <li><a class="dropdown-item" href="#">Accrediation</a></li>
+                            <li><a class="dropdown-item" href="#">Employment</a></li>
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Transportation</a></li>
+                            <li><a class="dropdown-item" href="contact us.html">Contact Us</a></li>
+
+                        </ul>
+                    </div>
+                        <!-- Admission button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ADMISSIONS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                        <!-- Academics button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ACADEMICS
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="preschool.html">Preschool</a></li>
+                            <li><a class="dropdown-item" href="elementaryschool.html">Elementary</a></li>
+                            <li><a class="dropdown-item" href="juniorschool.html">Junior High</a></li>
+                            <li><a class="dropdown-item" href="highschool.html">High School</a></li>
+                            <li><a class="dropdown-item" href="#">College & Career Counseling</a></li>
+                            <li><a class="dropdown-item" href="#">Arts</a></li>
+                            <li><a class="dropdown-item" href="#">Spanish Immersion</a></li>
+                        </ul>
+                    </div>
+                        <!-- Arts button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ARTS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                        <!-- Athletics button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ATHLETICS
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                        <!-- Faith button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            FAITH
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                        <!-- student experience button with sub menu -->
+
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            STUDENT EXPERIENCE
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+      
+    <section>
+        <div class="about_content">
+            <div class="about_content_text">
+                <h4>ACKR ELEMENTARY</h4>
+                <h1>Inspiring a love for lifelong learning</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vero ipsum nemo quibusdam architecto laborum ea doloremque, officiis quam et ipsa ducimus cupiditate veniam odio dolore repellat quod soluta molestiae culpa dolorem totam ratione mollitia maiores. Inventore autem quo nulla?</p>
+            </div>
+            <img src="images/preschool3.jpg" alt="" class="about_img">
+        </div>
+        <div class="fixed_content_grid">
+            <!-- Scrollable content -->
+            <div class="school_content_part">
+                <div style="text-align: justify;">
+                    <h2>Curriculum </h2>
+                    <p >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam nesciunt natus, blanditiis non placeat repellendus neque cupiditate mollitia dolore tenetur maiores illo ad id fugiat vero, officia soluta saepe quaerat adipisci consequatur ipsa. Iusto, incidunt aperiam? Tenetur voluptates temporibus et, nam totam animi non, eum sit omnis dicta explicabo at?</p>
+                    <img src="images/preschool2.jpg" alt="" width="80%" style="display: block;margin: auto;">
+                </div>
+            </div>
+            <!-- Explore Section  -->
+            <div class="fixed_part">
+                <button class="applybtn">APPLY NOW</button>
+                <h3 style="background-color: #aeb4bf;">Explore Section</h3>
+                <a href="#">Academics</a>
+                <a href="preschool.html">Preschool</a>
+                <a href="elementaryschool.html">Elementary</a>
+                <a href="juniorschool.html">Junior High</a>
+                <a href="highschool.html">High School</a>
+                <a href="#">College & Career Counseling</a>
+                <a href="#">Arts</a>
+                <a href="#">Spanish Immersion</a>
+                <h3 style="background-color: #aeb4bf;">HELPFUL RESOURCES</h3>
+                <a href="#">School Uniform</a>
+                <a href="#">Uniform Guide</a>
+                <a href="#">Elementary Admissions View Book</a>
+            </div>
+        </div>
+        <hr>
+        <!-- grid layout for image and description for Preschool -->
+        <div class="duo_grid">
+            <div class="duo_grid_content">
+                <h2>Faith</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+
+            </div>
+            <div class="duo_grid_content_img top_img">
+                <img class="duo_grid_img" src="images/preschool1.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <hr>
+        <div class="duo_grid">
+            <div class="duo_grid_content_img">
+                <img class="duo_grid_img" src="images/preschool1.jpg" alt="" width="100%">
+            </div>
+            <div class="duo_grid_content">
+                <h2>Communication</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+
+            </div>
+        </div>
+        <hr>
+        <div class="duo_grid">
+            <div class="duo_grid_content">
+                <h2>STEM</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+
+            </div>
+            <div class="duo_grid_content_img top_img">
+                <img class="duo_grid_img " src="images/preschool2.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <hr>
+        <div class="duo_grid">
+            <div class="duo_grid_content_img" >
+                <img  class="duo_grid_img" src="images/preschool3.jpg" alt="">
+            </div>
+            <div class="duo_grid_content">
+                <h2>Social Science</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="duo_grid">
+            <div class="duo_grid_content">
+                <h2>Fine Arts</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+
+            </div>
+            <div class="duo_grid_content_img top_img">
+                <img class="duo_grid_img " src="images/preschool5.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <hr>
+        <div class="duo_grid">
+            <div class="duo_grid_content_img" >
+                <img  class="duo_grid_img" src="images/preschool3.jpg" alt="">
+            </div>
+            <div class="duo_grid_content">
+                <h2>Before & After Student Care</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos recusandae et, quas corrupti, natus exercitationem error hic earum nesciunt minus vero itaque reprehenderit temporibus repellat expedita. Assumenda maiores obcaecati consequatur amet aliquid possimus odit quae voluptate esse natus dolorem illum consectetur, nisi, officiis quaerat! Perspiciatis neque incidunt vel cum qui mollitia dignissimos illo explicabo repellat, provident deserunt earum quod debitis animi eligendi. Cum sed atque nesciunt repellendus mollitia, quaerat quia sunt, ratione saepe sapiente consectetur porro! Atque nam perferendis labore amet quibusdam? Eos quo facilis magnam nobis cum quod, quaerat modi magni consectetur similique neque, voluptatibus nihil veniam inventore pariatur.</p>
+                <button class="schedulebtn">LEARN MORE</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- footer start here -->
+        <div class="footer_grid">
+            <div style="text-align: center;">
+                <h3>ACKR SCHOOLS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quas?</p>
+                <!-- contact Link with icon -->
+                 <div style="display: flex;justify-content: center;">
+                    <div class="contact_img_container">
+                        <a href="#"><img src="images/facebook.png" alt=""></a>
+                        <a href="#"><img src="images/instagram.png" alt=""></a>
+                        <a href="#"><img src="images/twitter.png" alt=""></a>
+                    </div>
+                 </div>
+               
+            </div>
+            <!-- links for Quick page navigation -->
+            <div class="links" style="text-align: center;">
+                <h3>HELPFUL LINKS</h3>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Staff Directory</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos fuga velit architecto deleniti, alias ipsam vero repudiandae! Suscipit, quis vel quisquam debitis, vero accusantium totam eligendi cumque incidunt atque commodi quod minus repellat dicta magnam itaque blanditiis enim accusamus adipisci reprehenderit sit. Non consequatur, ad nihil nam error iure.</p>
+            </div>
+
+        </div>
+        <!-- footer end here -->
+    </footer>
+    <!-- copy rights claim -->
+    <p class="copy">&copy; 2024 ACKR Schools. All rights reserved.</p>
+
+    <script src="javascript/javascript.js"></script>
+
+</body>
+</html>
