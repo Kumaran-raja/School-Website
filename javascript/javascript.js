@@ -112,3 +112,29 @@ window.addEventListener('scroll', function() {
         fixedPart.style.display = 'block';
     }
 });
+
+
+
+// Adverthisment
+
+// Show popup on page load
+window.onload = function () {
+    const adPopup = document.getElementById("adPopup");
+    const closePopup = document.getElementById("closePopup");
+  
+    // Display the popup
+    adPopup.style.display = "flex";
+  
+    // Close the popup when the close button is clicked
+    closePopup.onclick = function () {
+      adPopup.style.display = "none";
+    };
+  
+    // Close the popup when clicking outside the popup content
+    window.onclick = function (event) {
+      if (event.target === adPopup) {
+        adPopup.style.display = "none";
+      }
+    };
+  };
+  
