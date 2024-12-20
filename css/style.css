@@ -123,17 +123,6 @@ a{
     position: relative; 
 }
 
-
-.btn{
-    background-color: #374151;
-    opacity: 0.7;
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    margin-top: -60px;
-}
 .btn:hover{
     background-color: #7C2D12;
     color: white;
@@ -145,16 +134,16 @@ a{
     background-color: #ce4517;
     color: white;
 }
-.grade_inline_grid:hover{
-    background-color: #90460a;
 
-}
 .grade_inline_grid{
     display: grid;
     grid-template-columns: 30% 50%;
     padding: 10px;
     border-bottom: 1px solid #ccc;
     justify-content: center;
+}
+.grade_inline_grid:hover{
+  background-color: #90460a;
 }
 .grade_icon_img{
     width: 85%;
@@ -232,25 +221,20 @@ h3 {
     cursor: pointer;
     z-index: 10;
 }
-
 .arrow:hover {
     color: #333;
 }
-
 .prev {
     left: 10px;
 }
-
 .next {
     right: 10px;
 }
-
 .dots-container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
-
 .dot {
     width: 10px;
     height: 10px;
@@ -533,10 +517,7 @@ footer p{
     margin: 0px;
     margin-bottom: 10px;
   }
-  .hightschoolCurriculum h2{
-    margin: 0px;
-    margin-bottom: 10px;
-  }
+
   .hightschoolCurriculum{
     width: 70%;
     text-align: center;
@@ -544,6 +525,10 @@ footer p{
     margin: auto;
     margin-top: 30px;
     padding: 10px;
+  }
+  .hightschoolCurriculum h2{
+    margin: 0px;
+    margin-bottom: 10px;
   }
   .advanced li{
     margin-left: 40px;
@@ -621,12 +606,8 @@ footer p{
     .header_grid{
         display: none;
     }
-  
     .top a{
-        display: block;
         margin: auto;
-        color: white; 
-        text-decoration: none;
     }
     .type_img {
         width: 95%;
@@ -640,20 +621,16 @@ footer p{
     }
     .scrollable_part{
         height: 100%;
-        overflow-y: auto;
       }
     .fixed_part{
         height: 100%;
-        display: block;
         text-align: center;
         }
     .contact_scrollable_part{
         height: 100%;
-        overflow-y: auto;
       }
       .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
-        margin: 20px 0px;
       }
       
       .duo_grid_content {
@@ -669,9 +646,6 @@ footer p{
       .hightschoolCurriculum{
         width: 100%;
         text-align: justify;
-        display: block;
-        margin: auto;
-        padding: 10px;
       }
 /* Popup Content */
 .popup-content {
@@ -684,7 +658,6 @@ footer p{
 @media (min-width: 375px) and (max-width: 425px) {
     .logo {
         max-width: 20%;
-        height: 100%;
     }
     .header_grid{
         display: none;
@@ -697,23 +670,17 @@ footer p{
         bottom: 70px; 
     }
     .fixed_content_grid{
-        display: grid;
         grid-template-columns: 100%;
     }
     .scrollable_part{
         height: 100%;
-        overflow-y: auto;
       }
   .fixed_part{
     height: 100%;
-    display: block;
     text-align: center;
     }
     .duo_grid {
-        display: grid;
-        grid-template-columns: 100%; /* Keep single-column layout */
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
-        margin: 20px 0px;
       }
       
       .duo_grid_content {
@@ -729,9 +696,6 @@ footer p{
       .hightschoolCurriculum{
         width: 90%;
         text-align: justify;
-        display: block;
-        margin: auto;
-        padding: 10px;
       }
     /* Popup Content */
 .popup-content {
@@ -745,7 +709,6 @@ footer p{
 @media (min-width: 425px) and (max-width: 480px) {
     .logo {
         max-width: 20%;
-        height: 100%;
     }
     .header_grid{
         display: none;
@@ -758,24 +721,18 @@ footer p{
         bottom: 80px; 
     }
     .fixed_content_grid{
-        display: grid;
         grid-template-columns: 100%;
     }
     .scrollable_part{
         height: 100%;
-        overflow-y: auto;
       }
   
   .fixed_part{
     height: 100%;
-    display: block;
     text-align: center;
     }
     .duo_grid {
-        display: grid;
-        grid-template-columns: 100%; /* Keep single-column layout */
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
-        margin: 20px 0px;
       }
       
       .duo_grid_content {
@@ -791,7 +748,6 @@ footer p{
       .hightschoolCurriculum{
         width: 90%;
         text-align: justify;
-        padding: 10px;
       }
       /* Popup Content */
 .popup-content {
@@ -804,14 +760,12 @@ footer p{
 @media (min-width: 480px) and (max-width: 600px) {
     .logo {
         max-width: 20%;
-        height: 100%;
     }
     .header_grid{
         display: none;
     }
     .logo {
         max-width: 20%;
-        height: 100%;
     }
     /* School category */
     .type_img {
@@ -822,23 +776,17 @@ footer p{
         bottom: 90px; 
     }
     .fixed_content_grid{
-        display: grid;
         grid-template-columns: 100%;
     }
     .scrollable_part{
         height: 100%;
-        overflow-y: auto;
       }
   .fixed_part{
     height: 100%;
-    display: block;
     text-align: center;
     }
     .duo_grid {
-        display: grid;
-        grid-template-columns: 100%; /* Keep single-column layout */
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
-        margin: 20px 0px;
       }
       
       .duo_grid_content {
@@ -848,7 +796,7 @@ footer p{
       .top_img {
         grid-row: 1; /* Place the image in the first row */
       }
-      .duo_grid_img {
+      ._img {
         width: 90%;
       }
       .hightschoolCurriculum{
@@ -866,7 +814,6 @@ footer p{
 @media (min-width: 600px) and (max-width: 767px) {
     .logo {
         max-width: 15%;
-        height: 100%;
     }
     .header_grid{
         display: none;
@@ -883,13 +830,10 @@ footer p{
     }
     /* school grade */
     .grade_grid{
-        display: grid;
         grid-template-columns: 50% 50%;
     }
     .grade_inline_grid {
-        display: grid;
         grid-template-columns: 30% 70%;
-        border-bottom: 1px solid #ccc; 
         border-right: 1px solid #ccc;
     }
     .grade_inline_grid:last-child {
@@ -908,10 +852,9 @@ footer p{
         grid-template-columns: 33% 33% 33%;
     }
     .fixed_content_grid{
-        display: grid;
         grid-template-columns: 60% 40%;
       }
-      .duo_grid {
+      . {
         display: grid;
         grid-template-columns: 100%; /* Keep single-column layout */
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
@@ -940,7 +883,6 @@ footer p{
 @media (min-width: 767px) and (max-width: 1023px) {
     .logo {
         max-width: 15%;
-        height: 100%;
     }
     .header_grid{
         display: none;
@@ -958,13 +900,10 @@ footer p{
     }
     /* school grade */
     .grade_grid{
-        display: grid;
         grid-template-columns: 50% 50%;
     }
     .grade_inline_grid {
-        display: grid;
         grid-template-columns: 30% 70%;
-        border-bottom: 1px solid #ccc; 
         border-right: 1px solid #ccc;
     }
     .grade_inline_grid:last-child {
@@ -983,7 +922,6 @@ footer p{
         min-width: 750px;
     }
     .testimonial-slider {
-        display: flex;
         justify-content: left;
         flex-wrap: nowrap;
     }
@@ -997,11 +935,9 @@ footer p{
         grid-template-columns: 33% 33% 33%;
     }
     .fixed_content_grid{
-        display: grid;
         grid-template-columns: 65% 35%;
       }
       .duo_grid{
-        display: grid;
         grid-template-columns: 50% 50%;
       }
       .duo_grid_img{
@@ -1024,7 +960,6 @@ footer p{
         display: none;
     }
     .type_grid{
-        display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         justify-content: space-around;
     }
@@ -1036,11 +971,9 @@ footer p{
         bottom: 40px; 
     }
     .grade_grid{
-        display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
     .grade_inline_grid {
-        padding: 10px;
         grid-template-columns: 30% 70%;
         border-right: 1px solid #ccc;
         column-gap: 10px;
@@ -1053,7 +986,6 @@ footer p{
         min-width: 1023px;
     }
     .testimonial-slider {
-        display: flex;
         justify-content: left;
         flex-wrap: nowrap;
     }
@@ -1073,13 +1005,8 @@ footer p{
     display: grid;
     grid-template-columns: 40% 60%;
   }
-  .about_content_text{
-    text-align: justify;
-    margin: auto;
-    padding: 20px;
-  }
+
   .about_img{
-    width: 100%;
     padding: 10px;
     order: 1;
   }
@@ -1089,7 +1016,6 @@ footer p{
   }
 
   .duo_grid{
-    display: grid;
     grid-template-columns: 50% 50%;
   }
   .duo_grid_img{
@@ -1099,17 +1025,12 @@ footer p{
     grid-template-columns: 50% 50%;
   }
    /* hight school page */
-   .highschool_content_text{
-    text-align: justify;
-    margin: auto;
-    padding: 20px;
-  }
+
   .highschool_content{
     display: grid;
     grid-template-columns: 50% 50%;
   }
   .highschool_img{
-    width: 100%;
     order: 1;
   }
 }
@@ -1118,7 +1039,6 @@ footer p{
         display: none;
     }
     .type_grid{
-        display: grid;
         padding: 10px;
         grid-template-columns: 25% 25% 25% 25%;
         justify-content: space-around;
@@ -1131,11 +1051,9 @@ footer p{
         bottom: 50px; 
     }
     .grade_grid{
-        display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
     .grade_inline_grid {
-        padding: 10px;
         grid-template-columns: 30% 70%;
         border-right: 1px solid #ccc;
         column-gap: 10px;
@@ -1150,7 +1068,6 @@ footer p{
       
     }
     .testimonial-slider {
-        display: flex;
         justify-content: left;
         flex-wrap: nowrap;
     }
@@ -1169,13 +1086,8 @@ footer p{
     display: grid;
     grid-template-columns: 40% 60%;
   }
-  .about_content_text{
-    text-align: justify;
-    margin: auto;
-    padding: 20px;
-  }
+
   .about_img{
-    width: 100%;
     padding: 10px;
     order: 1;
   }
@@ -1185,7 +1097,6 @@ footer p{
   }
 
   .duo_grid{
-    display: grid;
     grid-template-columns: 50% 50%;
   }
   .duo_grid_img{
@@ -1195,17 +1106,12 @@ footer p{
     grid-template-columns: 50% 50%;
   }
   /* hight school page */
-  .highschool_content_text{
-    text-align: justify;
-    margin: auto;
-    padding: 20px;
-  }
+
   .highschool_content{
     display: grid;
     grid-template-columns: 50% 50%;
   }
   .highschool_img{
-    width: 100%;
     order: 1;
   }
   .adverthisment_grid h2{

@@ -67,14 +67,22 @@ closeBtn.addEventListener("click", () => {
     sideNav.style.width = "0"; // Collapse to 0
 });
 
+// function for About Navigation 
+
 const about=document.getElementById("aboutnavbtn");
 about.addEventListener('click',function(){
     window.location.href="about us.html";
 })
 
+// function for Home Navigation 
 const home=document.getElementById("homenavbtn");
 home.addEventListener('click',function(){
     window.location.href="index.html";
+})
+// function for Home Navigation 
+const academic=document.getElementById("academicnavbtn");
+academic.addEventListener('click',function(){
+    window.location.href="preschool.html";
 })
 // automatic Counter
 document.addEventListener("DOMContentLoaded", () => {
