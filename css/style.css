@@ -134,6 +134,9 @@ a{
     background-color: #ce4517;
     color: white;
 }
+.grade_grid h6{
+  margin: 0px;
+}
 
 .grade_inline_grid{
     display: grid;
@@ -257,6 +260,7 @@ footer{
 .footer_grid{
     display: grid;
     grid-template-columns: 100%;
+    row-gap: 20px;
 }
 .contact_img_container{
     display: flex;
@@ -332,7 +336,7 @@ footer p{
     padding: 10px;
     margin: 10px;
 }
-.btn{
+.headerbtn{
     margin-top: 0px;
     border: none;
     background-color: #7C2D12;
@@ -597,6 +601,10 @@ footer p{
 .ads_img{
   width: 100%;
 }
+/* for footer map */
+.ratio{
+  width: 100%;
+}
 
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
@@ -654,6 +662,10 @@ footer p{
 .adverthisment_grid h2{
   font-size: 35px;
 }
+/* for footer map */
+.ratio{
+  width: 90%;
+}
 }
 @media (min-width: 375px) and (max-width: 425px) {
     .logo {
@@ -705,6 +717,10 @@ footer p{
 .adverthisment_grid h2{
   font-size: 40px;
 }
+/* for footer map */
+.ratio{
+  width: 80%;
+}
 }
 @media (min-width: 425px) and (max-width: 480px) {
     .logo {
@@ -755,6 +771,9 @@ footer p{
 }
 .adverthisment_grid h2{
   font-size: 40px;
+}
+.ratio{
+  width: 80%;
 }
 }
 @media (min-width: 480px) and (max-width: 600px) {
@@ -810,6 +829,9 @@ footer p{
 .adverthisment_grid h2{
   font-size: 45px;
 }
+.ratio{
+  width: 60%;
+}
 }
 @media (min-width: 600px) and (max-width: 767px) {
     .logo {
@@ -854,11 +876,8 @@ footer p{
     .fixed_content_grid{
         grid-template-columns: 60% 40%;
       }
-      . {
-        display: grid;
-        grid-template-columns: 100%; /* Keep single-column layout */
+      .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
-        margin: 20px 0px;
       }
       .duo_grid_content {
         grid-row: 2; /* Place content in the second row */
@@ -878,6 +897,9 @@ footer p{
 }
 .adverthisment_grid h2{
   font-size: 55px;
+}
+.ratio{
+  width: 100%;
 }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -952,6 +974,7 @@ footer p{
 .adverthisment_grid h2{
   font-size: 60px;
 }
+
 
   
 }
@@ -1033,6 +1056,10 @@ footer p{
   .highschool_img{
     order: 1;
   }
+  .ratio{
+    width: 70%;
+  }
+  
 }
 @media (min-width: 1200px) {
     .mobileview{
@@ -1120,4 +1147,8 @@ footer p{
   .adverthisment_grid p{
     font-size: 20px;
   }
+  .ratio{
+    width: 70%;
+  }
+  
 }

@@ -84,6 +84,8 @@ const academic=document.getElementById("academicnavbtn");
 academic.addEventListener('click',function(){
     window.location.href="preschool.html";
 })
+
+
 // automatic Counter
 document.addEventListener("DOMContentLoaded", () => {
     const counters = document.querySelectorAll(".counter");
@@ -125,19 +127,24 @@ window.addEventListener('scroll', function() {
 
 // Adverthisment
 
-// Show popup on page load
 window.onload = function () {
     const adPopup = document.getElementById("adPopup");
     const closePopup = document.getElementById("closePopup");
-  
-    // Display the popup
-    adPopup.style.display = "flex";
-  
+
+    // Check if the popup has been shown during the current session
+    if (!sessionStorage.getItem("popupShown")) {
+      // Display the popup
+      adPopup.style.display = "flex";
+
+      // Set the flag in sessionStorage
+      sessionStorage.setItem("popupShown", "true");
+    }
+
     // Close the popup when the close button is clicked
     closePopup.onclick = function () {
       adPopup.style.display = "none";
     };
-  
+
     // Close the popup when clicking outside the popup content
     window.onclick = function (event) {
       if (event.target === adPopup) {

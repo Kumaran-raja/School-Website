@@ -14,7 +14,7 @@
     <header>
         <div class="top">
             <p>ACKR School is Now Open</p>
-            <a href="">LEARN MORE</a>
+            <a href="#">LEARN MORE</a>
         </div>
         <!-- for mmobile view logo and menu only show below 1024px-->
         <div class="mobileview">
@@ -27,14 +27,14 @@
             <a href="index.html">Home</a>
             <a href="about us.html">About</a>
             <a href="#">Admissions</a>
-            <a href="#">Academics</a>
+            <a href="preschool.html">Academics</a>
             <a href="#">Arts</a>
             <a href="#">Athletics</a>
             <a href="#">Faith</a>
             <a href="#">For Parents</a>
             <a href="#">Support</a>
             <div style="display: flex;justify-content: center; margin: 10px;">
-                <button class="contactnavbtn">CONTACT US</button>
+                <button class="contactnavbtn" onclick="window.location.href='contact us.html';">CONTACT US</button>
                 <button class="supportnavbtn">SUPPORT</button>
             </div>
         </div>
@@ -50,25 +50,23 @@
                     <a href="">SUPPORT</a>
                     <a href="">DONATE NOW</a>
                 </div>
-                <!-- Menu with sub -->
                 <div class="header_grid2">
+                <!-- Menu with sub -->
                     <div class="btn-group">
-                        <button id="homenavbtn" class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button id="homenavbtn" class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             HOME
                         </button>
-                        <!-- Home sub menu -->
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
+                        <!-- About sub menu -->
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="aboutnavbtn">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="aboutnavbtn">
                             ABOUT
                         </button>
-                        <!-- About sub menu -->
-
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="about us.html">About</a></li>
                             <li><a class="dropdown-item" href="#">Mission and Vision</a></li>
@@ -80,13 +78,11 @@
                             <li><a class="dropdown-item" href="#">Blog</a></li>
                             <li><a class="dropdown-item" href="#">Transportation</a></li>
                             <li><a class="dropdown-item" href="contact us.html">Contact Us</a></li>
-
                         </ul>
                     </div>
-                        <!-- Admission button with sub menu -->
-
+                    <!-- Admission button with sub menu -->
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ADMISSIONS
                         </button>
                         <ul class="dropdown-menu">
@@ -95,13 +91,11 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                        <!-- Academics button with sub menu -->
-
+                    <!-- Academics button with sub menu -->
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="academicnavbtn">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="academicnavbtn">
                             ACADEMICS
                         </button>
-
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="preschool.html">Preschool</a></li>
                             <li><a class="dropdown-item" href="elementaryschool.html">Elementary</a></li>
@@ -112,10 +106,9 @@
                             <li><a class="dropdown-item" href="#">Spanish Immersion</a></li>
                         </ul>
                     </div>
-                        <!-- Arts button with sub menu -->
-
+                    <!-- Arts button with sub menu -->
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ARTS
                         </button>
                         <ul class="dropdown-menu">
@@ -124,10 +117,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                        <!-- Athletics button with sub menu -->
-
+                    <!-- Athletics button with sub menu -->
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ATHLETICS
                         </button>
                         <ul class="dropdown-menu">
@@ -136,10 +128,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </div>
-                        <!-- Faith button with sub menu -->
-
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- Faith button with sub menu -->
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             FAITH
                         </button>
                         <ul class="dropdown-menu">
@@ -149,9 +140,8 @@
                         </ul>
                     </div>
                         <!-- student experience button with sub menu -->
-
                     <div class="btn-group">
-                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="headerbtn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             STUDENT EXPERIENCE
                         </button>
                         <ul class="dropdown-menu">
@@ -273,7 +263,7 @@
         <div class="footer_grid">
             <div style="text-align: center;">
                 <h3>ACKR SCHOOLS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quas?</p>
+                <p>ACKR Schools Springfield, USA-62704.</p>
                 <!-- contact Link with icon -->
                  <div style="display: flex;justify-content: center;">
                     <div class="contact_img_container">
@@ -287,15 +277,25 @@
             <!-- links for Quick page navigation -->
             <div class="links" style="text-align: center;">
                 <h3>HELPFUL LINKS</h3>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact us.html">Contact</a></li>
                 <li><a href="#">Admissions</a></li>
                 <li><a href="#">Staff Directory</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Terms & Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </div>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eos fuga velit architecto deleniti, alias ipsam vero repudiandae! Suscipit, quis vel quisquam debitis, vero accusantium totam eligendi cumque incidunt atque commodi quod minus repellat dicta magnam itaque blanditiis enim accusamus adipisci reprehenderit sit. Non consequatur, ad nihil nam error iure.</p>
+            <div >
+                <h4 style="text-align: center;">Location</h4>
+                <div class="ratio" style="display: block; margin: auto; height: 200px; margin-top: 30px;">
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0"
+                        style="border:0;"
+                        src="https://www.google.com/maps?q=37.7749,-122.4194&z=15&output=embed"
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
         </div>
