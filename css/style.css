@@ -85,7 +85,6 @@ a{
     margin: 40px 0px;
     justify-content: center;
 }
-
 .type_img {
     width: 80%;
     height: 80%;
@@ -96,7 +95,6 @@ a{
     box-shadow: 0 4px 6px;
     position: relative; 
 }
-
 .typebtn {
     color: white;
     display: block;
@@ -122,7 +120,6 @@ a{
     padding: 10px;
     position: relative; 
 }
-
 .btn:hover{
     background-color: #7C2D12;
     color: white;
@@ -133,12 +130,10 @@ a{
     grid-template-columns: 100%;
     background-color: #ce4517;
     color: white;
-
 }
 .grade_grid h6{
   margin: 0px;
 }
-
 .grade_inline_grid{
     display: grid;
     grid-template-columns: 30% 50%;
@@ -175,25 +170,21 @@ a{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
-
 .testimonial-slider {
     display: flex;
     transition: transform 0.5s ease;
     width: 100%;
 }
-
 .testimonial {
     flex: 0 0 100%;
     text-align: center;
     padding: 20px;
 }
-
 .testimonial p {
     font-style: italic;
     color: #333;
     margin-bottom: 15px;
 }
-
 .avatar {
     width: 100px;
     height: 100px;
@@ -202,18 +193,15 @@ a{
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
 h3 {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 .testimonial p:last-child {
     font-size: 1rem;
     color: #777;
 }
-
 .arrow {
     position: absolute;
     top: 50%;
@@ -248,7 +236,6 @@ h3 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 .dot.active {
     background-color: #333;
 }
@@ -302,7 +289,6 @@ footer p{
     transition: 0.5s; /* Smooth opening effect */
     padding-top: 60px;
 }
-
 .sidenav a {
     padding: 8px 16px;
     text-decoration: none;
@@ -311,11 +297,9 @@ footer p{
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover {
     color: #f4a261;
 }
-
 .closebtn {
     position: absolute;
     top: 10px;
@@ -329,7 +313,6 @@ footer p{
     background-color: #F5F5DC;
     margin: 10px;
     padding: 10px 20px;
-
 }
 .supportnavbtn{
     color: white;
@@ -393,18 +376,15 @@ footer p{
     padding: 10px 30px;
     color: black;
     background-color: #f1f1f1;
-
  }
  .fixed_part h3{
     padding: 10px 30px;
     margin-bottom: 0px;
     background-color: #aeb4bf;
-
  }
  a{
     text-decoration: none;
  }
-
  .contact_scrollable_part{
     height: 100vh;
     overflow-y: auto;
@@ -413,7 +393,6 @@ footer p{
   .contact_scrollable_part::-webkit-scrollbar{
     display: none;
   }
-
  .contact_scrollable_part table{
     width: 100%;
     background-color: #f1f1f1;
@@ -507,7 +486,6 @@ footer p{
     text-align: justify;
     margin: auto;
     padding: 20px;
-   
   }
   .highschool_content{
     display: flex;
@@ -522,7 +500,6 @@ footer p{
     margin: 0px;
     margin-bottom: 10px;
   }
-
   .hightschoolCurriculum{
     width: 70%;
     text-align: center;
@@ -540,7 +517,6 @@ footer p{
     font-size: 18px;
     margin-top: 15px;
   }
-
   /* Popup Container */
 .popup {
   display: none;
@@ -554,7 +530,6 @@ footer p{
   justify-content: center;
   align-items: center;
 }
-
 /* Popup Content */
 .popup-content {
   background: #fff;
@@ -562,7 +537,6 @@ footer p{
   /* border-radius: 10px; */
   width: 50%;
 }
-
 /* Close Button */
 .close {
   position: absolute;
@@ -572,7 +546,6 @@ footer p{
   font-size: 24px;
   cursor: pointer;
 }
-
 /* Button */
 .offerbtn {
   display: inline-block;
@@ -606,7 +579,6 @@ footer p{
 .ratio{
   width: 100%;
 }
-
 @media (min-width: 320px) and (max-width: 375px) {
     .logo {
         max-width: 20%;
@@ -641,10 +613,8 @@ footer p{
       .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
       }
-      
       .duo_grid_content {
         grid-row: 2;
-
       }
       .duo_grid_img {
         width: 90%;
@@ -695,11 +665,9 @@ footer p{
     .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
       }
-      
       .duo_grid_content {
         grid-row: 2; /* Place content in the second row */
       }
-      
       .top_img {
         grid-row: 1; /* Place the image in the first row */
       }
@@ -743,7 +711,6 @@ footer p{
     .scrollable_part{
         height: 100%;
       }
-  
   .fixed_part{
     height: 100%;
     text-align: center;
@@ -751,11 +718,9 @@ footer p{
     .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
       }
-      
       .duo_grid_content {
         grid-row: 2; /* Place content in the second row */
       }
-      
       .top_img {
         grid-row: 1; /* Place the image in the first row */
       }
@@ -808,11 +773,9 @@ footer p{
     .duo_grid {
         grid-template-rows: auto auto; /* Two rows: one for image, one for content */
       }
-      
       .duo_grid_content {
         grid-row: 2; /* Place content in the second row */
       }
-      
       .top_img {
         grid-row: 1; /* Place the image in the first row */
       }
@@ -822,7 +785,6 @@ footer p{
       .hightschoolCurriculum{
         width: 90%;
       }
-    
       /* Popup Content */
 .popup-content {
   width: 90%;
@@ -869,7 +831,6 @@ footer p{
         border-right: none;
     }
     /* footer Design */
-
     .footer_grid{
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -910,7 +871,6 @@ footer p{
     .header_grid{
         display: none;
     }
-  
     .type_grid{
         grid-template-columns: 50% 50%;
     }
@@ -938,7 +898,6 @@ footer p{
     .grade_grid > :nth-child(2) {
         border-right: none;
     }
-
     /* feedback Slider */
     .testimonial-container {
         width: 100%;
@@ -975,9 +934,6 @@ footer p{
 .adverthisment_grid h2{
   font-size: 60px;
 }
-
-
-  
 }
 @media (min-width: 1023px) and (max-width: 1200px) {
     .mobileview{
@@ -1013,13 +969,11 @@ footer p{
         justify-content: left;
         flex-wrap: nowrap;
     }
-
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
     }
     /* footer Design */
-
     .footer_grid{
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -1029,7 +983,6 @@ footer p{
     display: grid;
     grid-template-columns: 40% 60%;
   }
-
   .about_img{
     padding: 10px;
     order: 1;
@@ -1038,7 +991,6 @@ footer p{
   .contact_scrollable_part{
     margin: 30px;
   }
-
   .duo_grid{
     grid-template-columns: 50% 50%;
   }
@@ -1049,7 +1001,6 @@ footer p{
     grid-template-columns: 50% 50%;
   }
    /* hight school page */
-
   .highschool_content{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1060,7 +1011,6 @@ footer p{
   .ratio{
     width: 70%;
   }
-  
 }
 @media (min-width: 1200px) {
     .mobileview{
@@ -1090,16 +1040,13 @@ footer p{
         border-right: none; /* Removes the line after the last column */
     }
     .testimonial-container {
-       
         width: 100%;
         min-width: 1200px;
-      
     }
     .testimonial-slider {
         justify-content: left;
         flex-wrap: nowrap;
     }
-
     .testimonial {
         flex: 0 0 50%;
         max-width: 50%;
@@ -1114,7 +1061,6 @@ footer p{
     display: grid;
     grid-template-columns: 40% 60%;
   }
-
   .about_img{
     padding: 10px;
     order: 1;
@@ -1123,7 +1069,6 @@ footer p{
   .contact_scrollable_part{
     margin: 30px;
   }
-
   .duo_grid{
     grid-template-columns: 50% 50%;
   }
@@ -1134,7 +1079,6 @@ footer p{
     grid-template-columns: 50% 50%;
   }
   /* hight school page */
-
   .highschool_content{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1151,5 +1095,4 @@ footer p{
   .ratio{
     width: 70%;
   }
-  
 }

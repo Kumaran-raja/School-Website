@@ -25,13 +25,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     nextButton.addEventListener("click", () => {
-        if (currentIndex < totalCards - 2) {
-            currentIndex++;
+        // Check the screen width
+        const isSmallScreen = window.innerWidth > 767;
+    
+        // Update logic based on screen width
+        if (isSmallScreen) {
+            if (currentIndex < totalCards - 2) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
         } else {
-            currentIndex = 0;
+            if (currentIndex < totalCards - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
         }
+        // Update the slider position
         updateSliderPosition();
     });
+    
 
     prevButton.addEventListener("click", () => {
         if (currentIndex > 0) {
